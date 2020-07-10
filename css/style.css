@@ -1,0 +1,154 @@
+.modal-body {
+    height: 55vh;
+    overflow-y: scroll;
+}
+
+.modal-header {
+    background-color: #f8f9fa;
+    height: 72px;
+}
+
+.modal-title {
+    font-size: 19px;
+    color: #808080;
+    font-weight: 400;
+    margin: 4px 25px;
+}
+
+.icon-create-folder {
+    float: left;
+    margin: 5px 10px 0px;
+}
+
+.icon-create-folder:hover {
+    transform: translateY(-4px);
+    transition: 0.4s;
+}
+
+.input-create-folder {
+    margin: 0px 30px 0px 0px;
+    width: 215px;
+}
+
+.block-file {
+    padding: 30px 0px;
+}
+
+.block-file:hover {
+    box-shadow: 0 1px 5px #a3a3a340, 0 1px 2px #b1b1b138;
+    border-radius: 5px;
+}
+
+.dropdown-menu {
+    display: block;
+    top: 18px;
+    left: 327px;
+}
+
+
+/* Картинки SVG для файлов */
+.icon-folder,
+.icon-word,
+.icon-excel,
+.icon-pdf,
+.icon-text,
+.icon-image,
+.icon-archive,
+.icon-default {
+    width: 65px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+.icon-folder {
+    background: url("../images/folder.svg");
+}
+
+.icon-word {
+    background: url("../images/word.svg");
+}
+
+.icon-excel {
+    background: url("../images/excel.svg");
+}
+
+.icon-pdf {
+    background: url("../images/pdf.svg");
+}
+
+.icon-text {
+    background: url("../images/file-text.svg");
+}
+
+.icon-image {
+    background: url("../images/image.svg");
+}
+
+.icon-archive {
+    background: url("../images/archive.svg");
+}
+
+.icon-default {
+    background: url("../images/default.svg");
+}
+
+.file-name {
+    display: block;
+}
+
+.selected {
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
+}
+
+/* Футер модального окна */
+.modal-footer {
+    background-color: #f8f9fa;
+    height: 100px;
+}
+
+.upload {
+    font-size: 18px;
+    color: #808080;
+    cursor: pointer;
+}
+
+.button-upload {
+    transition: 0.3s;
+    float: left;
+    margin-right: 5px;
+}
+
+.upload:hover .button-upload {
+    transform: translateY(-5px);
+}
+
+.upload:hover .button-upload__text {
+    color: #202020;
+    cursor: pointer;
+}
+
+#submit {
+    border: 1px solid #ffffff;
+    padding: 7px 20px;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+}
+
+#submit:hover {
+    background-color: #0f8a2c;
+}
+
+#submit:focus {
+    background-color: #087e4d;
+}
+
+/* убирает обводку всех input */
+textarea:focus, input:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: rgb(151, 151, 151);
+  }

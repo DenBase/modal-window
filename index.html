@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Домашняя</title>
+  <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="images/book.ico">
+</head>
+
+<body>
+
+  <div class="container mt-5 pt-5 text-center">
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModal">
+      Запустить модальное окно
+    </button>
+
+    <!-- Модальное окно -->
+    <div class="modal fade mt-5" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+
+          <!-- Шапка модального окна -->
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Менеджер файлов</h5>
+
+            <!-- Кнопка закрытия. !Видна только на телефоне -->
+            <button type="button" class="close d-sm-none" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+
+            <div class="d-none d-lg-block">
+              <div class="icon-create-folder">
+                <input type="image" src="images/create-new-folder.svg" alt="Submit" height="30" title="Создать новую папку">
+              </div>
+              <input type="text" class="form-control input-create-folder" placeholder="Задать имя новой папки">
+            </div>
+          </div>
+
+          <!-- Контейнер модального окна -->
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+
+                <!-- Блоки файлов в модальном окне -->
+                <div class="block-file col-6 col-sm-3 col-md-3 col-lg-2">
+                  <div class="icon-folder"></div>
+                  <span class="file-name pt-2">. . .</span>
+                </div>
+
+                <div class="block-file selected col-6 col-sm-3 col-md-3 col-lg-2">
+                  <div class="icon-folder"></div>
+                  <span class="file-name pt-2">Папка</span>
+                </div>
+
+                <div class="block-file col-6 col-sm-3 col-md-3 col-lg-2">
+                  <div class="icon-word"></div>
+                  <span class="file-name pt-2">Файл.doc</span>
+                </div>
+
+                <div class="block-file col-6 col-sm-3 col-md-3 col-lg-2">
+                  <div class="icon-excel"></div>
+                  <span class="file-name pt-2">Файл.xlsx</span>
+                </div>
+
+                <div class="block-file col-6 col-sm-3 col-md-3 col-lg-2">
+                  <div class="icon-pdf"></div>
+                  <span class="file-name pt-2">Файл.pdf</span>
+                </div>
+
+                <div class="block-file col-6 col-sm-3 col-md-3 col-lg-2">
+                  <div class="icon-text"></div>
+                  <span class="file-name pt-2">Файл.txt</span>
+                </div>
+
+                <div class="block-file col-6 col-sm-3 col-md-3 col-lg-2">
+                  <div class="icon-image"></div>
+                  <span class="file-name pt-2">Файл.jpg</span>
+                </div>
+
+                <div class="block-file col-6 col-sm-3 col-md-3 col-lg-2">
+                  <div class="icon-archive"></div>
+                  <span class="file-name pt-2">Файл.zip</span>
+                </div>
+
+                <div class="block-file col-6 col-sm-3 col-md-3 col-lg-2">
+                  <div class="icon-default"></div>
+                  <span class="file-name pt-2">Файл</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Футер модального окна -->
+          <div class="modal-footer justify-content-center">
+            <div class="upload">
+              <div class="button-upload btn-label"><img src="images/upload-file.svg" height="35" alt="Загрузить файл">
+              </div>
+              <label class="button-upload__text" for="myfile">Добавить файл</label>
+              <input type="file" class="btn-upload" id="myfile" name="myfile" style="display: none;">
+            </div>
+            <input type="submit" id="submit" value="Загрузить" style="display: none;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="plugins/bootstrap/js/jquery-3.5.1.min.js"></script>
+  <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="plugins/bootstrap/js/upload-files.js"></script>
+</body>
+
+</html>
