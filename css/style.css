@@ -1,3 +1,313 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+/* шапка */
+.header {
+    height: 60px;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* форма гдобального поиска */
+.form-control {
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem;
+    height: 3rem;
+    border-color: #dfdfdf;
+}
+
+.form-control.input-create-folder {
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+}
+
+.main-search-box {
+    max-width: 900px;
+}
+
+.search-form {
+    position: relative;
+    width: 100%;
+}
+
+/* форма поиска на странице документация*/
+.search-form .search-input {
+    width: 85%;
+    height: 38px;
+    font-size: 15px;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 30px;
+    margin: 20px;
+}
+
+.search-form .search-btn {
+    color: #cacaca;
+    background: none;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 22px;
+    margin-right: 24px;
+}
+
+.form-control-docs {
+    height: 2rem;
+    border: 1px solid #ced4da;
+}
+
+.form-control-docs:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem #007bff40;
+}
+
+.docs-sidebar-toggler {
+    display: inline-block;
+    border: none;
+    padding: 0;
+    font-size: 20px;
+    position: relative;
+    background-color: #f8f9fa;
+}
+
+/* Карточки на главной */
+.card {
+    border-radius: 5px;
+    background: #ffffff;
+}
+
+.card:hover {
+    box-shadow: 0 0.1rem 0.1rem #0000001a !important;
+    background: #ffffff;
+}
+
+.card-icon {
+    width: 60px;
+    height: 60px;
+    padding-top: 12px;
+    display: inline-block;
+}
+
+.card-title-text {
+    font-weight: 100;
+    font-size: 2rem;
+    display: inline-block;
+    position: relative;
+    top: 0.5rem;
+}
+
+.card-icon-holder {
+    display: inline-block;
+    background: #f8f9fa;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.card {
+    margin: 20px 0px;
+}
+
+.card-discription {
+    margin: 10px 12px 20px 42px;
+}
+
+.card-body .card-link-mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* Форма авторизации */
+.form-heding {
+    font-size: 2em;
+    text-align: center;
+    margin: 160px 0px 30px;
+}
+
+/* Подвал на главной */
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #1d2447;
+}
+
+/* Подвал на страницах документации */
+.footer-docs {
+    margin-top: 30px;
+    display: block;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
+
+.footer-copyright-docs {
+    color: #080808;
+    font-size: small;
+    padding-top: 15px;
+}
+
+.footer-links {
+    padding-top: 15px;
+    color: white;
+    font-size: small;
+}
+
+/* Сайдбар на странице документаций */
+#docs-nav {
+    overflow-y: auto;
+}
+
+#docs-sidebar.sidebar-visible {
+    transform: translateX(0);
+    display: block;
+}
+
+.docs-sidebar {
+    width: 300px;
+    position: fixed;
+    z-index: 10;
+    top: 60px;
+    height: calc(100% - 60px);
+    background: #fff;
+    overflow-y: auto;
+    box-shadow: 1px 0 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.docs-sidebar.sidebar-hidden {
+    transform: translateX(-300px);
+    display: block;
+}
+
+.docs-nav .nav-item.section-title .nav-link {
+    padding: 0;
+    display: inline-block;
+}
+
+.docs-nav .nav-link {
+    display: inline-block;
+    position: relative;
+    padding: 0.5rem 1rem;
+    color: #5d6778;
+    font-size: 15px;
+}
+
+.docs-nav .nav-link.active {
+    color: #0082fb;
+}
+
+.docs-nav .nav-link:hover {
+    color: #77bdff;
+}
+
+.docs-nav .nav-item {
+    margin-left: 2.5rem;
+}
+
+.section-title {
+    padding: 9px;
+    font-size: 16px;
+}
+
+.btn.focus,
+.btn:focus {
+    box-shadow: none;
+}
+
+/* Контейнер статьи */
+.article {
+    margin-top: 70px;
+}
+
+.docs-article {
+    color: #414141;
+}
+
+.inner-navigation {
+    font-size: 15px;
+    position: fixed;
+}
+
+.inner-navigation a {
+    color: gray;
+}
+
+.inner-navigation a:hover {
+    color: #0082fb;
+}
+
+.inner-navigation .nav-item.active {
+    color: #0082fb;
+}
+
+.docs-article .section-heading {
+    font-size: 1.875rem;
+}
+
+.docs-section {
+    padding: 4rem 0rem 1rem 0rem;
+    border-bottom: 1px solid #e7e9ed;
+}
+
+/* Кастомный скроллбар */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 5px;
+    background-color: #F5F5F5;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background-color: #c5cee0;
+}
+
+/* Медиа запросы */
+@media screen and (max-width: 1200px) {
+    .docs-sidebar {
+        transition: transform 0.35s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .headline {
+        font-family: inherit;
+        font-size: 27px;
+        font-weight: 200;
+    }
+
+    .inner-navigation {
+        position: relative;
+    }
+
+    .docs-sidebar {
+        transition: transform 0.35s ease-in-out;
+    }
+}
+
+/* Потом удалить */
+.policy {
+    margin-top: 300px;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+
+/* ----------------------------- Модальное окно ---------------------------- */
 .modal-body {
     height: 55vh;
     overflow-y: scroll;
@@ -39,61 +349,64 @@
     border-radius: 5px;
 }
 
-.dropdown-menu {
-    display: block;
-    top: 18px;
-    left: 327px;
-}
-
-
 /* Картинки SVG для файлов */
-.icon-folder,
-.icon-word,
-.icon-excel,
-.icon-pdf,
-.icon-text,
-.icon-image,
-.icon-archive,
-.icon-default {
+.block-file__icon-folder,
+.block-file__icon-word,
+.block-file__icon-excel,
+.block-file__icon-pdf,
+.block-file__icon-text,
+.block-file__icon-image,
+.block-file__icon-archive,
+.block-file__icon-default {
     width: 65px;
     height: 80px;
     margin: 0 auto;
 }
 
-.icon-folder {
+.block-file__icon-folder {
     background: url("../images/folder.svg");
 }
 
-.icon-word {
+.block-file__icon-word {
     background: url("../images/word.svg");
 }
 
-.icon-excel {
+.block-file__icon-excel {
     background: url("../images/excel.svg");
 }
 
-.icon-pdf {
+.block-file__icon-pdf {
     background: url("../images/pdf.svg");
 }
 
-.icon-text {
+.block-file__icon-text {
     background: url("../images/file-text.svg");
 }
 
-.icon-image {
+.block-file__icon-image {
     background: url("../images/image.svg");
 }
 
-.icon-archive {
+.block-file__icon-archive {
     background: url("../images/archive.svg");
 }
 
-.icon-default {
+.block-file__icon-default {
     background: url("../images/default.svg");
 }
 
-.file-name {
+.block-file__file-name {
     display: block;
+    box-sizing: content-box;
+    width: 100%;
+}
+
+span.block-file__file-name {
+    width: 160px;
+    word-break: keep-all;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-left: 10px;
 }
 
 .selected {
@@ -145,10 +458,124 @@
 }
 
 /* убирает обводку всех input */
-textarea:focus, input:focus {
+textarea:focus,
+input:focus {
     outline: none;
 }
 
 ::placeholder {
     color: rgb(151, 151, 151);
-  }
+}
+
+
+/* ------------------------------- Контекстное меню ------------------------------- */
+
+.context-menu-icon-download:before {
+    content: ' ';
+    background-image: url('../plugins/context-menu/icons/download.svg');
+    background-size: 18px 18px;
+    height: 18px;
+    width: 18px;
+    background-repeat: no-repeat;
+}
+
+.context-menu-icon-download:hover:before {
+    background-image: url('../plugins/context-menu/icons/download-whute.svg');
+}
+
+.context-menu-icon-copy:before {
+    content: ' ';
+    background-image: url('../plugins/context-menu/icons/copy.svg');
+    background-size: 18px 18px;
+    height: 18px;
+    width: 18px;
+    background-repeat: no-repeat;
+}
+
+.context-menu-icon-copy:hover:before {
+    background-image: url('../plugins/context-menu/icons/copy-white.svg');
+}
+
+.context-menu-icon-delete:before {
+    content: ' ';
+    background-image: url('../plugins/context-menu/icons/delete.svg');
+    background-size: 18px 18px;
+    height: 18px;
+    width: 18px;
+    background-repeat: no-repeat;
+}
+
+.context-menu-icon-delete:hover:before {
+    background-image: url('../plugins/context-menu/icons/delete-white.svg');
+}
+
+.context-menu-icon-quit:before {
+    content: ' ';
+    background-image: url('../plugins/context-menu/icons/quit.svg');
+    background-size: 18px 18px;
+    height: 18px;
+    width: 18px;
+    background-repeat: no-repeat;
+}
+
+.context-menu-icon-quit:hover:before {
+    background-image: url('../plugins/context-menu/icons/quit-white.svg');
+}
+
+.context-menu-icon::before {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.context-menu-list {
+    position: absolute;
+    display: inline-block;
+    padding: .25em 0;
+    margin: .3em;
+    font-family: inherit;
+    font-size: inherit;
+    list-style-type: none;
+    background: #fff;
+    border: 1px solid #bebebe;
+    border-radius: .2em;
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+}
+
+.context-menu-item {
+    position: relative;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: .2em 2em;
+    color: #2f2f2f;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #fff;
+}
+
+.context-menu-item>label>input,
+.context-menu-item>label>textarea {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+.context-menu-item.context-menu-hover {
+    color: #fff;
+    cursor: pointer;
+    background-color: #498dce;
+}
+
+.context-menu-separator {
+    padding: 0;
+    margin: .35em 0;
+    border-bottom: 1px solid #e6e6e6;
+}
