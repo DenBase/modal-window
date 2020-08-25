@@ -319,10 +319,10 @@ html {
 }
 
 .modal-title {
-    font-size: 19px;
+    font-size: 25px;
     color: #808080;
-    font-weight: 400;
-    margin: 4px 25px;
+    font-weight: 300;
+    margin: 0px 25px;
 }
 
 .icon-create-folder {
@@ -336,8 +336,23 @@ html {
 }
 
 .input-create-folder {
-    margin: 0px 30px 0px 0px;
+    margin: 0px 30px 0px 0px;color: #808080;
+    font-size: 15px;
+    margin: 0px 25px;
+    letter-spacing: 1px;
     width: 215px;
+}
+
+/* Путь вложенности файлов  */
+.modal-body-header {
+    background-color: #f7f9fa;
+}
+
+.path-files {
+    color: #808080;
+    font-size: 15px;
+    margin: 0px 42px;
+    letter-spacing: 1px;
 }
 
 .block-file {
@@ -416,13 +431,14 @@ span.block-file__file-name {
 
 /* Футер модального окна */
 .modal-footer {
-    background-color: #f8f9fa;
+    background-color: #273789;
     height: 100px;
+    border-top: none;
 }
 
 .upload {
     font-size: 18px;
-    color: #808080;
+    color: #fff;
     cursor: pointer;
 }
 
@@ -437,24 +453,8 @@ span.block-file__file-name {
 }
 
 .upload:hover .button-upload__text {
-    color: #202020;
+    color: #e6e6e6;
     cursor: pointer;
-}
-
-#submit {
-    border: 1px solid #ffffff;
-    padding: 7px 20px;
-    border-radius: 5px;
-    background-color: #28a745;
-    color: white;
-}
-
-#submit:hover {
-    background-color: #0f8a2c;
-}
-
-#submit:focus {
-    background-color: #087e4d;
 }
 
 /* убирает обводку всех input */
@@ -571,7 +571,7 @@ input:focus {
 .context-menu-item.context-menu-hover {
     color: #fff;
     cursor: pointer;
-    background-color: #498dce;
+    background-color: #4353a1;
 }
 
 .context-menu-separator {
